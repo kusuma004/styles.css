@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>course forms</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="heading">Course Registration Form</h1>
+    <forms action="" autocomplete="" target="_blank">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label>First Name:</label></td>
+            <td>
+              <input type="text" placeholder="ex:kusuma" size="20" required />
+              <p>Enter Your Name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Surname:</label></td>
+            <td><input type="text" placeholder="ex:K" /></td>
+          </tr>
+          <tr>
+            <td><label>Mobile Number:</label></td>
+            <td><input type="tel" placeholder="ex:9865443201" required /></td>
+          </tr>
+          <tr>
+            <td><label>Email:</label></td>
+            <td>
+              <input type="email" placeholder="ex:kusuma@gmail.com" required />
+              <img id="valid" src="yes.jpg" />
+              <img id="invalid" src="no.jpg" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Password:</label></td>
+            <td>
+              <input
+                type="password"
+                required
+                placeholder="min 5 characters"
+                min="5"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Confirm Password:</label></td>
+            <td>
+              <input
+                type="password"
+                required
+                placeholder="min 5 characters"
+                min="5"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>DOB:</label></td>
+            <td><input type="date" required /></td>
+          </tr>
+          <tr>
+            <td><label>Gender:</label></td>
+            <td>
+              <input type="radio" /><label for="">Male </label
+              ><input type="radio" /><label for="">Female</label>
+              <input type="radio" /><label for="">customs</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Select Country:</label></td>
+            <td>
+              <select>
+                <option value="">INDIA</option>
+                <option value="">US</option>
+                <option value="">AUSTRALIA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Upload Picture:</label></td>
+            <td><input type="file" optional /></td>
+            <br />
+          </tr>
+          <tr>
+            <td><input type="reset" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label>Select Course:</label></td>
+            <td>
+              <select>
+                <option value="">python full stack</option>
+                <opton value="">java full stack</opton>
+                <optiom value="">full stack web </optiom>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Delivery Mode:</label></td>
+            <td>
+              <input type="radio" /> <label>ONLINE</label>
+              <input type="radio" /> <label>OFFLINE</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Institute Name:</label></td>
+            <td><input type="text" value="TAP ACADEMY" readonly /></td>
+          </tr>
+          <tr>
+            <td><label>Comments:</label></td>
+            <td><textarea rows="4" cols="50"></textarea></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <input type="submit" />
+    </forms>
+  </body>
+</html>
